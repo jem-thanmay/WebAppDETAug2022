@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<FriendModel>
+
+<div class="table">
+    @foreach (FriendModel f in @Model)
+    {
+        <th>
+            <td>@f.FriendID</td>
+        </th>
+         <th>
+            <td>@f.FName</td>
+
+        </th
+         <th>
+            <td>@f.FPlace</td>
+        </th>
+    }
+    
+</div>

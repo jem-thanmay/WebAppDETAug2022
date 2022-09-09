@@ -11,6 +11,11 @@ namespace FirstMVC.Models
         public PizzaSize Size { get; set; }
         public bool IsGlutenFree { get; set; }
 
+        //public string Topping { get; set; }
+
+        //public string Sauce { get; set; }
+
+
         [Range(0.01, 9999.99)]
         public decimal Price { get; set; }
     }

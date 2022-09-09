@@ -1,5 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using FirstMVC.Data;
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddDbContext<FirstMVCContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("FirstMVCContext") ?? throw new InvalidOperationException("Connection string 'FirstMVCContext' not found.")));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -20,8 +24,12 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+//using routing
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Pizza}/{action=Index}/{id?}");
+    pattern: "{controller=Speaker}/{action=Index}/{id?}");
+app.MapGet("/", () => "Hello World");
+app.MapGet("/hello/{name:alpha}", (string name) => $"Hello {name}");
+
 
 app.Run();
