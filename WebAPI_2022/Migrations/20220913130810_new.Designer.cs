@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebAPI_2022.Data;
 
@@ -10,9 +11,10 @@ using WebAPI_2022.Data;
 namespace WebAPI_2022.Migrations
 {
     [DbContext(typeof(WebAPI_2022Context))]
-    partial class WebAPI_2022ContextModelSnapshot : ModelSnapshot
+    [Migration("20220913130810_new")]
+    partial class @new
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

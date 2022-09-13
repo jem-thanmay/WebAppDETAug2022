@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstMVC", "FirstMVC\FirstM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoUniversity", "ContosoUniversity\ContosoUniversity.csproj", "{A5B09296-B2EB-4E81-BEFE-CE0A4AFE0FD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI_2022", "WebAPI_2022\WebAPI_2022.csproj", "{E0AAB269-413A-41FE-8AF8-C0D878625F71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI_2022", "WebAPI_2022\WebAPI_2022.csproj", "{E0AAB269-413A-41FE-8AF8-C0D878625F71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAPIClient", "ConsoleAPIClient\ConsoleAPIClient.csproj", "{5D3ED32A-70B5-404D-BA5D-CF3F2F246053}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAPIClient", "ConsoleAPIClient\ConsoleAPIClient.csproj", "{5D3ED32A-70B5-404D-BA5D-CF3F2F246053}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

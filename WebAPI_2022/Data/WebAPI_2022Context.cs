@@ -15,5 +15,7 @@ namespace WebAPI_2022.Data
         }
 
         public DbSet<WebAPI_2022.Models.Users> Users { get; set; } = default!;
+
+        public DbSet<WebAPI_2022.Models.TodoItem>? TodoItem { get; set; }
     }
 }
