@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using WebAPI_2022.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<WebAPI_2022Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("WebAPI_2022Context") ?? throw new InvalidOperationException("Connection string 'WebAPI_2022Context' not found.")));
 
 // Add services to the container.
 
