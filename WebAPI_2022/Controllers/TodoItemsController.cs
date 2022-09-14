@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
 using Microsoft.EntityFrameworkCore;
 using WebAPI_2022.Data;
 using WebAPI_2022.Models;
@@ -23,6 +24,7 @@ namespace WebAPI_2022.Controllers
 
         // GET: api/TodoItems
         [HttpGet]
+        [EnableQuery]
         public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItem()
         {
           if (_context.TodoItem == null)
